@@ -10,6 +10,10 @@ module.exports = (env, argv) => {
             extensions: ['.js', '.jsx'],
         },
         entry: "./src/index.jsx",
+        
+           
+
+        
         output: {
             path: __dirname + '/review_build',
             filename: "bundle.js"

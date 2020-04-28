@@ -1,8 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Calendar from './Calendar';
 import "./index.scss";
-
+import Calendar from "./Calendar";
 
 const rootElement = document.querySelector("#root");
 

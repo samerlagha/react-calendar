@@ -3,14 +3,15 @@
     flex-direction: column;
     position: fixed;
     width: 100%;
-    background-color: #fff;
+    // background-color: rgb(250, 234, 18);
+    background: linear-gradient(90deg, #27f5e4 10%, #f50f0f 55%, rgb(215, 218, 14) 90%);
     z-index: 50;
 
     .navigation {
         display: flex;
         align-items: center;
         height: 64px;
-        border-bottom: 1px solid #111010;
+        border-bottom: 1px solid #eeecf5;
         width: 100%;
 
         .add-button {
@@ -21,24 +22,22 @@
             width: 150px;
             height: 50px;
             background-color: transparent;
-            border: 2px solid #2809c5;
-            border-left: red;
-            border-right: green;
+            border: 2px solid #3700ff;
+            border-left: rgb(238, 203, 6);
+            border-right: rgb(9, 5, 211);
             border-top: none;
            
           
-            border-radius: 10px;
+            border-radius: 25px;
             outline: none;
-            -webkit-box-shadow:  0px 3px 6px 0px rgba(31, 18, 150, 0.993);
-            -moz-box-shadow:  0px 3px 6px 0px rgba(31, 18, 150, 0.993);
-            box-shadow: 0px 3px 6px 0px rgba(31, 18, 150, 0.993);
+
+            box-shadow: 2px 3px 6px 2px rgba(24, 24, 23, 0.993);
         }
 
         .add-button:hover {
             background-color: #fc0606;
-            -webkit-box-shadow:0px 2px 12px 0px rgb(22, 22, 22);
-            -moz-box-shadow: 0px 2px 12px 0px rgb(22, 22, 22);
-            box-shadow: 0px 2px 12px 0px rgb(22, 22, 22);
+            
+            box-shadow: 0px 2px 12px 0px rgb(248, 3, 3);
         }
 
         .show-today-btn {
@@ -47,10 +46,8 @@
             width: 100px;
             height: 40px;
             background-color: transparent;
-            border: 1px solid #0c0cf0;
-            -webkit-border-radius: 8px;
-            border-radius: 8px;
-            -webkit-box-sizing: border-box;
+            border: 1px solid #0b07fa;
+            border-radius: 25px;
             box-sizing: border-box;
             cursor: pointer;
 
@@ -60,18 +57,18 @@
                 letter-spacing: .25px;
                 text-transform: none;
                 opacity: 1;
-                color: #210af0;
+                color: #1506bd;
             }
         }
 
         .show-today-btn:hover {
-            background-color: #ee0a0af3;
-           
+            background-color: #fffbfbf3;
+               
         }
 
         .button-style {
             margin: 0 5px;
-            color: #3f4142;
+            color: #0d0d0e;
             background-color: transparent;
             border: none;
         }
@@ -83,13 +80,14 @@
         }
 
         .nav-button__size:hover {
-            background-color: #2904f8;
+            background-color: #eae8f3;
+            cursor: pointer;
         }
 
         .current-month {
             font-size: 24px;
             font-weight: 500;
-            color: #1f2225;
+            color: #0a0ef3;
             letter-spacing: 0;
             line-height: 28px;
             white-space: nowrap;
@@ -119,10 +117,10 @@
 
             .day-name {
                 font-size: 12px;
-                color: #1407c9;
+                color: #0d09f1;
 
                 &__current {
-                    color: rgb(245, 1, 1)
+                    color: rgb(252, 0, 0)
                 }
             }
 
@@ -133,12 +131,12 @@
                 width: 45px;
                 height: 45px;
                 font-size: 25px;
-                color: #1407c9;
+                color: #19191a;
                 border-radius: 100%;
 
                 &__current {
-                    color: rgb(26, 1, 250);
-                    background-color: rgb(255, 11, 11);
+                    color: rgb(250, 1, 1);
+                    background-color: rgb(255, 246, 246);
                 }
             }
         }
