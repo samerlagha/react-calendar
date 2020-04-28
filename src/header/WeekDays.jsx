@@ -1,31 +1,31 @@
 import React from "react";
-
+import { generateNumbersRange } from "../utilities";
 import moment from "moment";
 
-//function to generate numbers 
-const generateNumbersRange = (from, to) => {
-  const result = [];
+// function to generate numbers 
+// const generateNumbersRange = (from, to) => {
+//   const result = [];
 
-  for (let i = from; i <= to; i++) {
-      result.push(i);
-  };
-  return result;
-}
+//   for (let i = from; i <= to; i++) {
+//       result.push(i);
+//   };
+//   return result;
+// }
 
 const WeekDays = ({ addDay }) => {
-
+  //today data
   let currentDay = addDay;
+ // func weekdays return current date & name
+  const weekDays = generateNumbersRange(0, 6).map((li) => {
 
-  const weekDays = generateNumbersRange(0, 6).map(ele => {
-    const startOfWeek = moment()
-      .startOf("week")
-      .add(currentDay, "day");
-     // current day and Name
+    //first day in week 'monday'
+    const startOfWeek = moment().startOf("week").add(currentDay, "day");
+
+    //mark today data and name of day
     let markCurrentDay;
     let markCurrentDayName;
 
     if (moment().format("DD.MM.YY") === startOfWeek.format("DD.MM.YY")) {
-      //class fo current day and date change styles
       markCurrentDay = "day-date day-date__current";
       markCurrentDayName = "day-name day-name__current";
     } else {
@@ -36,7 +36,7 @@ const WeekDays = ({ addDay }) => {
     currentDay++;
 
     return (
-      <li key={ele} className="week__day">
+      <li key={li} className="week__day">
         <span className={markCurrentDayName}>{startOfWeek.format("ddd")}</span>
         <span className={markCurrentDay}>{startOfWeek.format("DD")}</span>
       </li>
@@ -45,6 +45,5 @@ const WeekDays = ({ addDay }) => {
 
   return <ul className="week">{weekDays}</ul>;
 };
-  
 
 export default WeekDays;

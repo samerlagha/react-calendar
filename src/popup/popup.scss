@@ -1,0 +1,125 @@
+.popup {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 40%;
+    top: 25%;
+    height: 400px;
+    width: 500px;
+    background-color: rgb(13, 206, 240);
+    opacity: 0.9;
+   
+    box-shadow: 0 24px 38px 3px rgb(3, 220, 248), 0 9px 46px 8px rgba(7, 236, 225, 0.945), 0 11px 15px -7px rgb(9, 216, 231);
+   ;
+    border-radius: 12px;
+   
+    transition: opacity 200ms ease-in-out;
+    z-index: 100;
+
+    .close {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        font-size: 20px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__form {
+        margin-top: 35px;
+        margin-left: 25px;
+
+        .name-event {
+            width: 450px;
+            font-size: 20px;
+            border: none;
+            border-bottom: 1px solid rgb(13, 13, 14);
+        }
+
+        .date-wrapper {
+            display: flex;
+            margin-top: 65px;
+            margin-right: 25px;
+            justify-content: space-between;
+            border-radius: 12px;
+            
+            
+
+            .begin {
+                width: 140px;
+                border: none;
+                cursor: pointer;
+
+            }
+
+            .end {
+                width: 140px;
+                border: none;
+                cursor: pointer;
+            }
+
+            select {
+                border: none;
+                cursor: pointer;
+            }
+        }
+
+        .description {
+            display: flex;
+            margin-top: 45px;
+
+            textarea {
+                margin-left: 5px;
+                width: 430px;
+            }
+        }
+
+        .control {
+            display: flex;
+            margin-top: 45px;
+            margin-left: 25px;
+            justify-content: space-between;
+
+            .submit-button {
+                display: flex;
+                justify-content: center;
+                margin-right: auto;
+                padding: 10px;
+                width: 125px;
+                height: 40px;
+                background-color: #0a06f8;
+                color: #fff;
+                border: none;
+                border-radius: 12px;
+                margin-left: auto;
+                margin-right: 20px;
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    .delete-ivent {
+        display: flex;
+        margin-top: -28px;
+        margin-left: 23px;
+        width: 20px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .delete-ivent__off {
+        display: none;
+    }
+}
+
+.hidden-popup {
+    display: none;
+}
+
+.show-popup {
+    display: flex;
+}

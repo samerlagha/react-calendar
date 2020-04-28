@@ -15,21 +15,22 @@ export const getCurrentDate = (date) => {
         .add(increaseDate, "day")
         .format("D");
 
-   // shwo data to one week
+   // shwo data fo one week
+    
     let dataByOneWeeks = () => {
         let format = "MMMM";
         let year = moment()
             .add(+increaseDate, "day")
             .year();
 
-        // if (+startOfWeek > +endOfWeek) {
-        //     year = "";
-        //     format = "MMM";
-        // }
+        if (+startOfWeek > +endOfWeek) {
+            year = "";
+            format = "MMM";
+        }
         //number of month
         let monthNumber = moment()
             .add(+increaseDate, "day")
-            .startOf("isoWeek")
+            .startOf("week")
             .format(format);
 
         return `${monthNumber}  ${year}`;
