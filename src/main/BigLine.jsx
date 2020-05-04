@@ -2,7 +2,7 @@ import React from "react";
 import { generateNumbersRange } from "../utilities";
 import GMT from "./Gmt";
 
-const HolidayLine = () => {
+const BigLine = () => {
   const holiday = generateNumbersRange(0, 6).map(arg => (
      <div key={arg} className="holiday__day"></div>
   ));
@@ -16,4 +16,4 @@ const HolidayLine = () => {
   );
 };
 
-export default HolidayLine;
+export default BigLine;

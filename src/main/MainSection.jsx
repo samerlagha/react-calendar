@@ -1,5 +1,5 @@
 import React from "react";
-import HolidayLine from "./HolidayLine";
+import BigLine from "./BigLine";
 import TimesDay from "./TimesDay";
 import TimeLines from "./TimeLines";
 import BlockDay from "./BlockDay";
@@ -10,7 +10,7 @@ const MainSection = ({ showPopup, setDateBlock,events,showEventData,dateEvent,bl
 }) => {
   return (
     <section className="main">
-      <HolidayLine /> 
+      <BigLine /> 
     
       <div className="wrapper-time">
         <div className="time">

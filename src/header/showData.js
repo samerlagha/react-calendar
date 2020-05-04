@@ -35,6 +35,7 @@ export const getCurrentDate = (date) => {
 
         return `${monthNumber}  ${year}`;
     };
+    
    // to show two week
     let dataByTwoWeeks = () => {
         if (+startOfWeek > +endOfWeek) {

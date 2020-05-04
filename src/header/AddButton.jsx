@@ -10,7 +10,7 @@ const AddButton = ({ showPopup }) => {
   return (
     <button
       className="add-button add-event"
-      onClick={() => showPopup(today, "09:00", "12:00")}
+      onClick={() => showPopup(today, "09:00", "23:00")}
     >
       <img
         src="https://img.icons8.com/dusk/64/000000/calendar-plus.png"

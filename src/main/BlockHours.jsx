@@ -36,14 +36,14 @@ const BlockHours = ({ hourId, events, showPopup, showEventData, blink }) => {
         endMinutes -
         startMinutes}px`;
 
-      const classEvent = blink == blinkData ? "event blink1" : "event";
+      const classEvent = blink == blinkData ? "event blink" : "event";
 
       event = (
         <div
           className={classEvent}
           style={{ marginTop: `${marginTopEvent}`, height: `${heightEvent}` }}
-          onClick={e => showEventData(e, findedEvent)}
-        >
+          onClick={e => showEventData(e, findedEvent)} >
+
           <span>{findedEvent.nameEvent}</span>
           <span>
             {findedEvent.timeEvent} - {findedEvent.endTimeEvent}

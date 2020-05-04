@@ -24,6 +24,7 @@ const Header = ({ showPopup, nextWeek, prevWeek, currentWeek, addDay }) => {
 };
 
 export default Header;
+
 Header.propTypes = {
   showPopup: PropTypes.func,
   nextWeek: PropTypes.func,

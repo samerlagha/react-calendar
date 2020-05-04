@@ -9,7 +9,7 @@ import moment from "moment";
 const BlockDays = ({ dayId, showPopup, events, showEventData, dateEvent, blink }) => {
   
   let idForHour = dayId;
-  const blockDay = generateNumbersRange(1, 6).map(arg => {
+  const blockDay = generateNumbersRange(0, 6).map(arg => {
     let idHour = moment()
       .startOf("week")
       .add(idForHour, "day")

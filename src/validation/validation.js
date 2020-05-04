@@ -13,8 +13,8 @@ export const validation = ({ dateEvent, endDateEvent, startEvent, endEvent, endT
         return false
     }
 
-    if (moment(endEvent, format) - moment(startEvent, format) > 6 * 60 * 60 * 1000) {
-        alert('Event can`t be more then 6 hours');
+    if (moment(endEvent, format) - moment(startEvent, format) > 24 * 60 * 60 * 1000) {
+        alert('Event can`t be more then 24 hours');
         return false
     }
 

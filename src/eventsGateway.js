@@ -10,7 +10,7 @@ export const createEvent = eventData => {
         body: JSON.stringify(eventData)
     }).then(response => {
         if (!response.ok) {
-            throw new Error("Failed to create event");
+            throw new Error( 'Internal Server Error. Can\'t display events');
         }
     });
 }
@@ -29,7 +29,7 @@ export const deleteEvents = (id) => {
         method: "DELETE"
     }).then(response => {
         if (!response.ok) {
-            throw new Error("Failed to delete task");
+            throw new Error( 'Internal Server Error. Can\'t display events');
         }
     });
 }
